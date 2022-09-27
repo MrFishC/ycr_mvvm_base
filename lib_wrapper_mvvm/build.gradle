@@ -3,7 +3,6 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'dagger.hilt.android.plugin'
     id 'kotlin-kapt'
-//    id 'maven-publish'      //Gradle 'publishToMavenLocal' task not found. Please add the 'maven-publish' or 'maven' plugin.
 }
 
 android {
