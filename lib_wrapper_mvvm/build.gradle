@@ -3,6 +3,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'dagger.hilt.android.plugin'
     id 'kotlin-kapt'
+//    id 'maven-publish'      //Gradle 'publishToMavenLocal' task not found. Please add the 'maven-publish' or 'maven' plugin.
 }
 
 android {
@@ -36,15 +37,17 @@ android {
 
 dependencies {
 
+    def lifecycle_version = "2.6.0-alpha01"
+
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.0.0'
 
     // ViewModel
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.0-alpha01'
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
     // LiveData
-    implementation 'candroidx.lifecycle:lifecycle-livedata-ktx:2.6.0-alpha01'
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
     //Lifecycles only (without ViewModel or LiveData)
-    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.0-alpha01'
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
     //hilt
     implementation 'com.google.dagger:hilt-android:2.38.1'
     kapt 'com.google.dagger:hilt-android-compiler:2.38.1'

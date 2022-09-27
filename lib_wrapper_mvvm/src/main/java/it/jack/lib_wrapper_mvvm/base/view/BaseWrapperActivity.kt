@@ -2,11 +2,13 @@ package it.jack.lib_wrapper_mvvm.base.view
 
 import android.os.Bundle
 import android.view.LayoutInflater
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.ViewDataBinding
+import it.jack.lib_wrapper_mvvm.interfa.IBaseView
 
 /**
  * @创建者 Jack
- * @创建时间 2022/8/26 0026 11:03
+ * @创建时间 2022/8/26
  * @描述
  */
 abstract class BaseWrapperActivity<VB : ViewDataBinding>(open var block: (LayoutInflater) -> VB) :
@@ -30,7 +32,7 @@ abstract class BaseWrapperActivity<VB : ViewDataBinding>(open var block: (Layout
 
     override fun prepareListener() {}
 
-    open fun hideDialog(){
+    open fun hideDialog() {
 
     }
 

@@ -1,4 +1,4 @@
-package com.jack.lib_wrapper_mvvm.base.view
+package it.jack.lib_wrapper_mvvm.base.view
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,11 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
-import com.jack.lib_wrapper_mvvm.interfa.IBaseView
+import it.jack.lib_wrapper_mvvm.interfa.IBaseView
 
 /**
  * @创建者 Jack
- * @创建时间 2022/9/15 19:51
+ * @创建时间 2022/9/15
  * @描述
  */
 abstract class BaseWrapperFragment<VB : ViewDataBinding>(open var block: (LayoutInflater) -> VB) :

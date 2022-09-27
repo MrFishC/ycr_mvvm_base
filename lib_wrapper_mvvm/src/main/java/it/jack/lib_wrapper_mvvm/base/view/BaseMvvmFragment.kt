@@ -1,13 +1,13 @@
-package com.jack.lib_wrapper_mvvm.base.view
+package it.jack.lib_wrapper_mvvm.base.view
 
 import android.view.LayoutInflater
 import androidx.databinding.ViewDataBinding
-import com.jack.lib_wrapper_mvvm.base.viewmodel.BaseWrapperViewModel
-import com.jack.lib_wrapper_mvvm.uistate.DialogState
+import it.jack.lib_wrapper_mvvm.base.viewmodel.BaseWrapperViewModel
+import it.jack.lib_wrapper_mvvm.uistate.DialogState
 
 /**
  * @创建者 Jack
- * @创建时间 2022/9/15 20:01
+ * @创建时间 2022/9/15
  * @描述
  */
 abstract class BaseMvvmFragment<VB : ViewDataBinding, VM : BaseWrapperViewModel>(override var block: (LayoutInflater) -> VB) :
@@ -26,8 +26,8 @@ abstract class BaseMvvmFragment<VB : ViewDataBinding, VM : BaseWrapperViewModel>
 
         mViewModel.showDialogState.observe(this) {
             when (it) {
-                DialogState.LOADING -> visibleDialog()
-                else -> hideDialog()
+                DialogState.OnLoading -> visibleDialog()
+                DialogState.OnHide -> hideDialog()
             }
         }
     }

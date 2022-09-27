@@ -3,12 +3,12 @@ package it.jack.lib_wrapper_mvvm.base.viewmodel
 import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.jack.lib_wrapper_mvvm.base.model.BaseWrapperModel
-import com.jack.lib_wrapper_mvvm.uistate.DialogState
+import it.jack.lib_wrapper_mvvm.base.model.BaseWrapperModel
+import it.jack.lib_wrapper_mvvm.uistate.DialogState
 
 /**
  * @创建者 Jack
- * @创建时间 2022/8/25 0025 20:48
+ * @创建时间 2022/8/25
  * @描述
  */
 
@@ -40,8 +40,8 @@ abstract class BaseWrapperViewModel constructor() : ViewModel() , DefaultLifecyc
 
         // 修改状态
         when {
-            hide -> showDialogState.postValue(DialogState.HIDE)
-            loading -> showDialogState.postValue(DialogState.LOADING)
+            hide -> showDialogState.postValue(DialogState.OnHide)
+            loading -> showDialogState.postValue(DialogState.OnLoading)
         }
     }
 
