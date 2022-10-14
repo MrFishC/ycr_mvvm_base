@@ -1,5 +1,5 @@
-package it.jack.lib_wrapper_mvvm.base.model
-import it.jack.lib_wrapper_mvvm.interfa.IModel
+package com.jack.lib_wrapper_mvvm.mvvm.model
+import com.jack.lib_wrapper_mvvm.interfa.IModel
 
 /**
  * @创建者 Jack

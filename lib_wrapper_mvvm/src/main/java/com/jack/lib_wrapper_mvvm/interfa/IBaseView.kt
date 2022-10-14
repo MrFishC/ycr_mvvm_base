@@ -1,4 +1,4 @@
-package it.jack.lib_wrapper_mvvm.interfa
+package com.jack.lib_wrapper_mvvm.interfa
 
 /**
  * @创建者 Jack

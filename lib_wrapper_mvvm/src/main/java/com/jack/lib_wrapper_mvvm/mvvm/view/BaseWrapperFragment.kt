@@ -1,4 +1,4 @@
-package it.jack.lib_wrapper_mvvm.base.view
+package com.jack.lib_wrapper_mvvm.mvvm.view
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
-import it.jack.lib_wrapper_mvvm.interfa.IBaseView
+import com.jack.lib_wrapper_mvvm.interfa.IBaseView
 
 /**
  * @创建者 Jack

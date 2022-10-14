@@ -1,4 +1,4 @@
-package it.jack.ycrmvvmbase
+package com.jack.ycrmvvmbase
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-package it.jack.lib_wrapper_mvvm.uistate
+package com.jack.lib_wrapper_mvvm.uistate
 
 /**
  * @创建者 Jack
